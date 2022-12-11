@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENVIRONHACK CLIMATHON BANGKOK</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="shortcut icon" href="../img/diary.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background: white;
+        }
+
+        nav {
+            display: flex;
+            height: auto;
+            background: #1D1D1F;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            flex-direction: column;
+            margin-bottom: 100px;
+        }
+
+        .nav-toggle {
+            color: white;
+            cursor: pointer;
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 30px;
+
+        }
+
+        .logo {
+            margin: 40px 0 40px 0;
+            font-size: 24px;
+        }
+
+        ul {
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 0;
+            display: none;
+        }
+
+        ul li {
+            list-style-type: none;
+            font-size: 24px;
+            cursor: pointer;
+            margin: 20px;
+            text-align: center;
+            padding: 5px 50px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        ul li:first-child {
+            margin-top: 0;
+        }
+
+        ul li:first-child {
+            margin-top: 0;
+        }
+
+        ul li:hover {
+            opacity: 0.5;
+        }
+
+        .active {
+            display: flex;
+        }
+
+        .climathon {
+            display: flex;
+            margin: 0 auto;
+            margin-bottom: 100px;
+            width: 500px;
+            height: 300px;
+        }
+
+        .contentbox {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #FFFF99;
+            padding: 50px 50px 50px 50px;
+            font-size: 24px;
+        }
+
+
+        @media screen and (min-width: 800px) {
+
+
+            nav {
+                height: 80px;
+                flex-direction: row;
+            }
+
+            .logo {
+                padding-left: 50px;
+                margin: 0;
+                width: 20%;
+            }
+
+            ul {
+                display: flex;
+                justify-content: flex-end;
+                width: 80%;
+                flex-direction: row;
+            }
+
+            ul li {
+                display: inline-block;
+                margin: 0 70px 0 0;
+                text-align: left;
+                font-size: 24px;
+                padding: 0;
+            }
+
+            .nav-toggle {
+                display: none;
+            }
+
+            .climathon {
+                display: flex;
+                margin: 0 auto;
+                margin-bottom: 100px;
+                width: 800px;
+                height: 450px;
+            }
+
+
+        }
+
+        @media screen and (max-width: 500px) {
+            .climathon {
+                display: flex;
+                margin: 0 auto;
+                margin-bottom: 100px;
+                width: 375px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav>
+        <span class="nav-toggle" id="js-nav-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+
+
+        <div class="logo">
+            <h1 style="color: white;">Diary</h1>
+        </div>
+
+        <ul id="js-menu">
+            <li><a href="../index.html" style="color: white;">Home</a></li>
+            <li><a href="../diary/diary.html" style="color: white;">About</a></li>
+            <li><a href="../contact/contact.html" style="color: white;">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="content">
+        <img src="../img/climathon.jpg" alt="climathon" class="climathon">
+        <h1 style="text-align: center;">Bangkok Climathon</h1>
+        <div class="contentbox">
+            <p>
+                เป็น Hackathon ครั้งที่ 2 ในชีวิตของผม โดยผมได้เห็นงานนี้จาก Facebook Hackathon thailand
+                โดยโจทย์ของงานนี้จะเป็นการแก้ไขปัญหาสิ่งแวดล้อมของกรุงเทพมหานคร
+                ไม่ว่าจะเป็นปัญหาการจัดการขยะ ปัญหาคาร์บอน ปัญหาภัยพิบัติที่เกิดจากสภาพภูมิอากาศที่เปลี่ยนแปลงไป
+                รวมไปถึงการเพิ่มพื้นที่สีเขียว และอื่นๆ ซึ่งก่อนที่จะได้เข้าร่วมโครงการในตอนแรกผมก็คิดหา Solution
+                ในการแก้ปัญหานํ้าท่วม แต่พอถึงวัน Oreintation ที่เปิดโอกาสให้ Hacker
+                ทั้งหลายมาแลกเปลี่ยนใอเดียกันตามที่เราสนใจ
+                กลายเป็นว่าใอเดียของผมมีทั้งห้อง มีแค่ 2 คน สรุปผมกับพี่อีกคนก็จึงตกลงกันว่าพวกเราต้องไปรวมกับกลุ่มอื่น
+                เพราะมีแค่ 2 คนมันทำไม่ได้ และพอถึงวันจริง วันนั้นค่อนข้างวุ่นวายมาก เพราะผมพึ่งสอบเสร็จก็ต้องรีบไป
+                Hackathon ต่อเลย เรียกได้ว่าวันนั้นเหนื่อยแบบสุดๆ
+                ก็เดินทางแบบทุลักทุเลจนไปถึงงานได้สำเร็จ พอไปถึงก็ได้แต่งงๆว่าเราต้องทำไรกันแน่
+                พอถามๆคนในงานก็ได้รู้ว่าเค้าให้รวมกลุ่มกันเองตามหัวข้อที่เราสนใจเลย ในใจผมตอนนั้นคือชิบหายแล้วไง
+                ตอนที่คุยกันวันนั้นมีแค่เรากับพี่อีกคนเอง แค่ 2 คนมันจะไปเป็นทีมได้ไง ก็เลยเดินไปดูทั่วๆงาน
+                จนสุดท้ายก็ได้เจออยู่กลุ่มนึง โดยกลุ่มนี้เค้าสนใจในเรื่องของ Green Space
+                ก็เลยได้ไปนั่งฟังใอเดียของพี่เค้า แล้วก็เท่าที่ฟังก็ดูน่าสนใจดี จนในท้ายที่สุดก็ได้อยู่ทีมนี้ ชื่อทีม
+                Dream Comes True ผมก็ไม่รู้เหมือนกันว่าใครตั้งลืมไปแล้ว555 ก็งานนี้โดยรวมๆก็มีความคล้ายกับ Hackathon
+                งานที่แล้วตรงที่ก็จะมี session อยู่หลาย session รวมไปถึงการ Mentor ที่ยังคงมีเหมือนเดิม
+                แต่งานนี้มันให้ความรู้สึกว่ามันเป็นงานที่ใหญ่กว่าคราวที่แล้วอยู่มาก
+                คือคนที่เข้าร่วมก็มีหลายช่วงวัย ไม่ว่าจะตั้งแต่คนที่กำลังเรียนอยู่ ม.6 มหาวิทยาลัย ปริญญาตรี โท เอก หรือ
+                แม้แต่พนักงานบริษัทหรือเจ้าของบริษัทก็ยังมาเข้าร่วมงานนี้
+                และรวมไปถึง guest ที่เชิญมาก็ระดับ รัฐมนตรีว่าการกระทรวงทรัพยากรธรรมชาติ รองผู้ว่าราชการกรุงเทพมหานคร
+                ผมจึงรู้สึกได้ว่างานมันใหญ่กว่าครั้งที่แล้วเยอะ
+                ส่วนการ Hackathon ก็เหมือนๆกันกับครั้งที่แล้วเลยก็คือ ไม่ได้นอน555 ที่ต่างก็น่าจะมีแค่ไม่เมาแค่นั้น
+                โดยสุดท้ายหลังจากอดหลับอดนอนกันมา เราก็ทำงานจนเสร็จ
+                เตรียมพร้อมท่จะไป Pitch โดยกลุ่มเราจะทำเกี่ยวกับการพัฒนาพื้นที่เขตธรณีสงฆ์ของวัดให้เป็นสวนละแวกบ้าน
+                โดยพวกเราก็ลงทุนถึงขนาดที่เราไปดูพื้นที่นำร่องด้วยตัวเองตั้งแต่วันนั้นเลย
+                และเมื่อถึงเวลา Pitching เราก็ส่งพี่ต้น ที่เป็นต้นคิดใอเดียนี้ไป Pitching
+                และพวกเราก็คอยให้กำลังใจอยู่ด้านล่างเวที 555 ซึ่งหลังจากที่พี่ต้น Pitch เสร็จ
+                ผลที่ได้ก็กลับดีเกินที่พวกเราคาดหวังไว้
+                พวกเราได้ที่ 2 จากงานนี้ และก็มีแนวโน้มที่ใอเดียเราจะได้ใช้จริงซะด้วย
+                งานนี้เลยเป็นอีกงานนึงที่ผมค่อนข้างประทับใจ เป็นอีก Event ที่มีความสำคัญกับชีวิตผม Event นึงเลยครับ
+
+            </p>
+        </div>
+
+    </div>
+    <script>
+        let mainNav = document.getElementById("js-menu");
+        let navBarToggle = document.getElementById("js-nav-toggle");
+
+        navBarToggle.addEventListener("click", function () {
+            mainNav.classList.toggle("active");
+        }); 
+    </script>
+
+</body>
+
+</html>

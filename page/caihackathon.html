@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAI CLUB HACKATHON</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="shortcut icon" href="../img/diary.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background: white;
+        }
+
+        nav {
+            display: flex;
+            height: auto;
+            background: #1D1D1F;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            flex-direction: column;
+            margin-bottom: 100px;
+        }
+
+        .caihackathon {
+            display: flex;
+            margin: 0 auto;
+            margin-bottom: 100px;
+        }
+
+
+
+        .nav-toggle {
+            color: white;
+            cursor: pointer;
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 30px;
+
+        }
+
+        .logo {
+            margin: 40px 0 40px 0;
+            font-size: 24px;
+        }
+
+        ul {
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 0;
+            display: none;
+        }
+
+        ul li {
+            list-style-type: none;
+            font-size: 24px;
+            cursor: pointer;
+            margin: 20px;
+            text-align: center;
+            padding: 5px 50px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        ul li:first-child {
+            margin-top: 0;
+        }
+
+        ul li:first-child {
+            margin-top: 0;
+        }
+
+        ul li:hover {
+            opacity: 0.5;
+        }
+
+        .active {
+            display: flex;
+        }
+
+        .caihackathon {
+            width: 375px;
+        }
+
+        .contentbox {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #FFFF99;
+            padding: 50px 50px 50px 50px;
+            font-size: 24px;
+        }
+
+
+
+        @media screen and (min-width: 800px) {
+
+
+            nav {
+                height: 80px;
+                flex-direction: row;
+            }
+
+            .logo {
+                padding-left: 50px;
+                margin: 0;
+                width: 20%;
+            }
+
+            ul {
+                display: flex;
+                justify-content: flex-end;
+                width: 80%;
+                flex-direction: row;
+            }
+
+            ul li {
+                display: inline-block;
+                margin: 0 70px 0 0;
+                text-align: left;
+                font-size: 24px;
+                padding: 0;
+            }
+
+            .nav-toggle {
+                display: none;
+            }
+
+            .caihackathon {
+                width: 800px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NavBar -->
+    <nav>
+        <span class="nav-toggle" id="js-nav-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+
+
+        <div class="logo">
+            <h1 style="color: white;">Diary</h1>
+        </div>
+
+        <ul id="js-menu">
+            <li><a href="../index.html" style="color: white;">Home</a></li>
+            <li><a href="../diary/diary.html" style="color: white;">About</a></li>
+            <li><a href="../contact/contact.html" style="color: white;">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="content">
+        <img src="../img/caihackathon.jpg" alt="caihackathon" class="caihackathon">
+        <h1 style="text-align: center;">CAI HACKATHON</h1>
+        <div class="contentbox">
+            <p>
+                เป็น Hackathon ครั้งแรกของผมเลยที่ผมได้มีโอกาสเข้าร่วม ซึ่งผมเจอโครงการนี้โดยบังเอิญจาก Facebook พอดี
+                จริงๆแล้วในตอนแรกผมคิดว่าคงไม่ได้เข้าร่วมเพราะว่าเค้ารับแค่เด็กม.ปลาย
+                แล้วก็บวกกับตอนนั้นผมแค่อยากจะช่วยน้องของผมหาผลงานก็เท่านั้นเอง
+                แต่สุดท้ายที่ได้เข้าร่วมมาก็เพราะเค้าเปิดรับนักศึกษาชั้นปีที่ 1
+                ให้เข้าร่วมได้ตอนหลังก่อนที่โครงการจะปิดรับสมัคร ซึงพอรู้อย่างนั้นผมก็รีบสมัครทันทีเลยอย่างไม่รีรอ
+                แล้วก็สุดท้ายก็ได้เข้าโครงการมาในที่สุด โดยผมก็มากับน้องผม (จริงๆแค่จะมาเป็นเพื่อนมันแหละกลัวมันเหงา)
+                พอเขาโครงการมาแล้ว ผมกับน้องก็ได้ทำความรู้จักกับเพื่อนหลายๆคนในโครงการมากมาย
+                แล้วก็เช่นเคยไม่พลาดที่จะขอคอนแทคด้วย ซึ่งผมกับน้องก็ต้องรวมทีมกันให้ได้ 5 คน
+                มันก็ยากลำบากพอสมควรที่เราจะต้องมาเลือกคนซึ่งใจจริงก็อยากได้ทุกคนที่เจอเลยแหละ ซึ่งจริงๆมันทำไม่ได้
+                แต่สุดท้ายผมกับน้องก็ได้ทีมจนได้
+                ซึ่งบอกเลยว่าโครงการนี้เปิดโลกหลายๆอย่างให้ผมมาก โดยตลอดโครงการก็จะมี session อยู่เยอะมากๆ
+                ไม่ว่าจะเป็นการ Workshop ที่มีอาจารย์จากมหาวิทยาลัยต่างๆ มาคอยสอนให้คำแนะนำเกี่ยวกับการสร้างนวัตกรรม
+                การคิด Business Model บลาๆๆ รวมถึงยังมีพี่ๆ mentor ที่จะมาคอยแนะนำเกี่ยวกับโปรเจคที่เราทำอยู่เป็นช่วงๆ
+                แม้แต่ session สอนเล่นหมากล้อมก็ยังมีเลยคิดดู พอเสร็จจากช่วง Mentor
+                เวลานี้แหละที่จะเป็นเวลาแห่งการทรมาณที่แท้จริง
+                ผมมั่นใจมากๆว่าคืนนี้คงไม่ได้นอกแน่ๆก็เลยนัดกับเพื่อนในทีมไปเอาอาหารมาตุนกัน
+                ซึ่งจริงๆโครงการนี้เค้ามีพวกขนม เครื่องดื่มอะไรฟรีอยู่แล้ว
+                แต่วันนั้นพวกผมนัดกันว่าจะไปทำงานที่ห้องน้องซี ที่เป็นน้องในกลุ่มกัน
+                ก็เลยหอบเอาขนมทั้งแถบมายัดจนกระเป๋าตุงกันไป พอมาถึงห้องก็จัดการเตรียมสถานที่ให้เรียบร้อยก่อนทำงาน
+                ตอนแรกมันก็ดูจะปกติดีอยู่ แต่ดันมีคนๆนึงอยากกินเหล้า คือแบบอยู่ดีก็อยากกินเฉย ผมก็เริ่มสังหรใจไม่ดีและ
+                ก็เลยรีบไปคุยกับมันให้มันคิดดีๆเรายังมีงานต้องทำอยู่นะ
+                ถ้าเมาแล้วเราจะทำงานกันยังไง? ตอนแรกมันก็บอกเราว่าเข้าใจๆ งั้นวันนี้ไม่กินเหล้า
+                แต่ไม่รู้เป็นมายังไงสุดท้ายก็ไม่ได้กินเหล้าจริงๆแต่กินเบียร์ 5555 ซึ่งมันก็เป็นอย่างที่คิดจริงๆ
+                ระหว่างที่ทำงานกัน ในทีมก็ค่อยๆล้มหายตายจากไปทีละคนๆ จนสุดท้ายก็เหลือผมคนเดียวนั่งทำงาน 555
+                แต่สุดท้ายก็ทำออกมาจนเสร็จ
+                โดยโปรเจคที่พวกผมทำกันก็จะเป็นโปรเจคเกี่ยวกับ
+                แอพลิเคชั่นที่สามารถช่วยให้จ่ายเงินค่าโดยสารเพียงแค่เดินขึ้นรถ
+                โดยแอพจะลิ้งกับกระจกด้านข้างรถทำการลิ้งค์การจ่ายเงิน และเมื่อถึงวัน Pitching ก็ตามคาดครับ ไม่ได้รางวัล
+                แต่โครงการนี้ก็ยังให้ประสบการณ์หลายๆอย่างที่ผมไม่เคยเจอมาก่อนมากมาย
+                สำหรับผมๆว่าโครงการนี้คุ้มค่ามากๆครับที่ได้เข้าร่วม
+
+
+            </p>
+        </div>
+
+    </div>
+
+
+    <script>
+        let mainNav = document.getElementById("js-menu");
+        let navBarToggle = document.getElementById("js-nav-toggle");
+
+        navBarToggle.addEventListener("click", function () {
+            mainNav.classList.toggle("active");
+        }); 
+    </script>
+
+</body>
+
+</html>

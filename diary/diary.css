@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+nav {
+    display: flex;
+    height: auto;
+    background: #1D1D1F;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.nav-toggle {
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+
+}
+
+.logo {
+    margin: 40px 0 40px 0;
+    font-size: 24px;
+}
+
+ul {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+    display: none;
+}
+
+ul li {
+    list-style-type: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 20px;
+    text-align: center;
+    padding: 5px 50px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul li:first-child {
+    margin-top: 0;
+}
+
+ul li:first-child {
+    margin-top: 0;
+}
+
+ul li:hover {
+    opacity: 0.5;
+}
+
+.active {
+    display: flex;
+}
+
+/* accordion */
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 100%;
+    box-sizing: border-box;
+
+}
+
+.accordion .contentBx {
+    position: relative;
+    margin: 50px 20px;
+    font-size: 24px;
+}
+
+.accordion .contentBx .label {
+    position: relative;
+    padding: 20px;
+    background: #1D1D1F;
+    color: #F5F5F7;
+    cursor: grab;
+    font-size: 28px;
+
+}
+
+.accordion .contentBx .label::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    font-size: 28px;
+}
+
+.accordion .contentBx.active .label::before {
+    content: "";
+    position: absolute;
+    top: 90%;
+    right: 50%;
+    transform: translateY(-80%);
+    font-size: 1.5em;
+
+}
+
+.accordion .contentBx .content {
+    position: relative;
+    background-color: #F5F5F7;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-x: auto;
+
+}
+
+
+.accordion .contentBx.active .content {
+    height: 20rem;
+    padding: 10px;
+    overflow: scroll;
+}
+
+/* แต่งปุ่ม */
+button {
+    background-color: #1D1D1F;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 2px;
+    cursor: pointer;
+}
+
+.linkpage:link {
+    color: white;
+}
+
+.linkpage:visited {
+    color: yellow;
+}
+
+
+
+
+@media screen and (min-width: 800px) {
+
+    .accordion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    nav {
+        height: 80px;
+        flex-direction: row;
+    }
+
+    .logo {
+        padding-left: 50px;
+        margin: 0;
+        width: 20%;
+    }
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        width: 80%;
+        flex-direction: row;
+    }
+
+    ul li {
+        display: inline-block;
+        margin: 0 70px 0 0;
+        text-align: left;
+        font-size: 24px;
+        padding: 0;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .accordion .contentBx.active .content {
+        height: 20rem;
+        padding: 10px;
+        overflow: scroll;
+    }
+
+
+    /* accordion */
+
+    .accordion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 80%;
+        box-sizing: border-box;
+
+    }
+
+
+
+}

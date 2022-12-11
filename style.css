@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {    
+    font-family: 'Inter', sans-serif;     
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;  
+    background: white;    
+}
+
+nav {
+    display: flex;
+    height: auto;
+    background: #1D1D1F;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.nav-toggle {
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+
+}
+
+.logo {
+    margin: 40px 0 40px 0;
+    font-size: 24px;
+}
+
+ul {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+    display: none;
+}
+
+ul li {
+    list-style-type: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 20px;
+    text-align: center;
+    padding: 5px 50px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul li:first-child {
+    margin-top: 0;
+}
+
+ul li:first-child {
+    margin-top: 0;
+}
+
+ul li:hover {
+    opacity: 0.5;
+}
+
+.active {
+    display: flex;
+}
+
+
+
+@media screen and (min-width: 700px) {
+
+
+    nav {
+        height: 80px;
+        flex-direction: row;
+    }
+
+    .logo {
+        padding-left: 50px;
+        margin: 0;
+        width: 20%;
+    }
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        width: 80%;
+        flex-direction: row;
+    }
+
+    ul li {
+        display: inline-block;
+        margin: 0 70px 0 0;
+        text-align: left;
+        font-size: 24px;
+        padding: 0;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+
+    /* set หน้า Profile */
+  
+
+    #header {
+        text-align: center;
+    }
+
+ 
+
+    .about {
+        margin-left: 10%;
+        margin-right: 10%;
+    }   
+
+
+
+}

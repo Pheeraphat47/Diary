@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIT HELLOWORLD</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="shortcut icon" href="../img/diary.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background: white;
+        }
+
+        nav {
+            display: flex;
+            height: auto;
+            background: #1D1D1F;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            flex-direction: column;
+            margin-bottom: 100px;
+        }
+
+        .nav-toggle {
+            color: white;
+            cursor: pointer;
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 30px;
+
+        }
+
+        .logo {
+            margin: 40px 0 40px 0;
+            font-size: 24px;
+        }
+
+        ul {
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 0;
+            display: none;
+        }
+
+        ul li {
+            list-style-type: none;
+            font-size: 24px;
+            cursor: pointer;
+            margin: 20px;
+            text-align: center;
+            padding: 5px 50px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        ul li:first-child {
+            margin-top: 0;
+        }
+
+        ul li:first-child {
+            margin-top: 0;
+        }
+
+        ul li:hover {
+            opacity: 0.5;
+        }
+
+        .active {
+            display: flex;
+        }
+
+        .helloworld {
+            display: flex;
+            margin: 0 auto;
+            width: 500px;
+            height: 300px;
+            margin-bottom: 100px;
+        }
+
+        .contentbox {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #FFFF99;
+            padding: 50px 50px 50px 50px;
+            font-size: 24px;
+        }
+
+        @media screen and (min-width: 800px) {
+
+
+            nav {
+                height: 80px;
+                flex-direction: row;
+            }
+
+            .logo {
+                padding-left: 50px;
+                margin: 0;
+                width: 20%;
+            }
+
+            ul {
+                display: flex;
+                justify-content: flex-end;
+                width: 80%;
+                flex-direction: row;
+            }
+
+            ul li {
+                display: inline-block;
+                margin: 0 70px 0 0;
+                text-align: left;
+                font-size: 24px;
+                padding: 0;
+            }
+
+            .nav-toggle {
+                display: none;
+            }
+
+            .helloworld {
+                display: flex;
+                margin: 0 auto;
+                width: 800px;
+                height: 500px;
+                margin-bottom: 100px;
+            }
+
+
+        }
+
+
+        @media screen and (max-width: 500px) {
+            .helloworld {
+            display: flex;
+            margin: 0 auto;
+            width: 375px;
+            height: 250px;
+            margin-bottom: 100px;
+        }
+            
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NavBar -->
+    <nav>
+        <span class="nav-toggle" id="js-nav-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+
+
+        <div class="logo">
+            <h1 style="color: white;">Diary</h1>
+        </div>
+
+        <ul id="js-menu">
+            <li><a href="../index.html" style="color: white;">Home</a></li>
+            <li><a href="../diary/diary.html" style="color: white;">About</a></li>
+            <li><a href="../contact/contact.html" style="color: white;">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="content">
+        <img src="../img/helloworld.png" alt="helloworld" class="helloworld">
+        <h1 style="text-align: center;">SIT HELLOWORLD</h1>
+        <div class="contentbox">
+            <p>
+                โครงการนี้คล้ายๆกับ starterpack ตรงที่เค้าเอารุ่นพี่มาสอนรุ่นน้องเหมือนกัน
+                แต่แตกต่างก็ตรงที่รุ่นพี่ที่มาสอนจะไม่ได่้มาจากสาขา IT เพียงอย่างเดียว คราวนี้จะเป็นรุ่นพี่จากทั้ง 3
+                สาขา ที่มีในคณะ SIT มาสอน
+                แล้วก็รวมถึงน้องๆในโครงการเองก็มาจากทั้ง 3 สาขาเช่นกัน
+                เรียกได้ว่ามันทำให้ผมได้รู้จักกับเพื่อนใหม่ๆจากต่างสาขาด้วย เป็นข้อดีมากๆอีกอย่างนึงของโครงการนี้
+                และที่พิเศษสุดๆก็คือโครงการนี้ช่วงท้ายๆเค้ามีให้ทำโปรเจคร่วมกันด้วย
+                เพื่อให้เราฝึกในเรื่องของการทำงานเป็นทีมอีกด้วย และเมื่อทำเสร็จก็จะมีการ Present โปรเจคให้กับรุ่นพี่ฟัง
+                รวมถึงตลอดระยะโครงการรุ่นพี่ก็ยังคอยให้คำแนะนำตลอด
+                ก็ต้องขอบคุณพี่ๆทุกคนที่ช่วยซัพพอรต์น้องมาตลอดด้วยนะครับ ก็จริงๆแล้วโครงการนี้ยังไม่จบ
+                ตอนนี้ก็เลยเขียนได้เท่านี้ ถ้าโครงการจบเมื่อไหร่จะมาเขียนต่อนะ
+            </p>
+        </div>
+
+    </div>
+
+    <script>
+        let mainNav = document.getElementById("js-menu");
+        let navBarToggle = document.getElementById("js-nav-toggle");
+
+        navBarToggle.addEventListener("click", function () {
+            mainNav.classList.toggle("active");
+        }); 
+    </script>
+</body>
+
+</html>

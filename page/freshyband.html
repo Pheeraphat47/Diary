@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRESHY BAND #9</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="shortcut icon" href="../img/diary.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background: white;
+        }
+
+        nav {
+            display: flex;
+            height: auto;
+            background: #1D1D1F;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            flex-direction: column;
+            margin-bottom: 100px;
+        }
+
+        .nav-toggle {
+            color: white;
+            cursor: pointer;
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 30px;
+
+        }
+
+        .logo {
+            margin: 40px 0 40px 0;
+            font-size: 24px;
+        }
+
+        ul {
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 0;
+            display: none;
+        }
+
+        ul li {
+            list-style-type: none;
+            font-size: 24px;
+            cursor: pointer;
+            margin: 20px;
+            text-align: center;
+            padding: 5px 50px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        ul li:first-child {
+            margin-top: 0;
+        }
+
+        ul li:first-child {
+            margin-top: 0;
+        }
+
+        ul li:hover {
+            opacity: 0.5;
+        }
+
+        .active {
+            display: flex;
+        }
+
+        .freshyband {
+            display: flex;
+            margin: 0 auto;
+            width: 375px;
+            height: 375px;
+            margin-bottom: 100px;
+        }
+
+        .contentbox {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #FFFF99;            
+            padding: 50px 50px 50px 50px;
+            font-size: 24px;
+        }
+
+
+
+        @media screen and (min-width: 800px) {
+
+
+            nav {
+                height: 80px;
+                flex-direction: row;
+            }
+
+            .logo {
+                padding-left: 50px;
+                margin: 0;
+                width: 20%;
+            }
+
+            ul {
+                display: flex;
+                justify-content: flex-end;
+                width: 80%;
+                flex-direction: row;
+            }
+
+            ul li {
+                display: inline-block;
+                margin: 0 70px 0 0;
+                text-align: left;
+                font-size: 24px;
+                padding: 0;
+            }
+
+            .nav-toggle {
+                display: none;
+            }
+
+            .freshyband {
+            display: flex;
+            margin: 0 auto;
+            width: 600px;
+            height: 500px;
+            margin-bottom: 100px;
+        }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- NavBar -->
+    <nav>
+        <span class="nav-toggle" id="js-nav-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+
+
+        <div class="logo">
+            <h1 style="color: white;">Diary</h1>
+        </div>
+
+        <ul id="js-menu">
+            <li><a href="../index.html" style="color: white;">Home</a></li>
+            <li><a href="../diary/diary.html" style="color: white;">About</a></li>
+            <li><a href="../contact/contact.html" style="color: white;">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="content">
+        <img src="../img/freshyband.jpg" alt="freshyband" class="freshyband">
+        <h1 style="text-align: center;">Freshyband #9</h1>
+        <div class="contentbox">
+            <p>
+                เป็นงานประกวดวงดนตรีงานแรกเลยที่ผมได้เข้าร่วมตั้งแต่ที่เข้ามหาวิทยาลัยครับ โดยผมรู้งานนี้จากการที่ผมได้เข้าชมรมบันเทิงและดนตรีสากล ซึ่งก็เห็นเค้าประกาศรับสมัครพอดี
+                ก็เลยลองปรึกษากับคนในวงดู สุดท้ายก็ลงสมัครไปในที่สุด โดยก่อนที่พวกผมจะขึ้นแสดง บอกเลยว่าวงของผมได้ซ้อมด้วยกันแค่ครั้งเดียว ซึ่งถ้าเทียบกับวงอื่นๆแล้วเค้าซ้อมหนักกว่าเราเยอะมากๆ
+                จริงๆแล้วผมก็ไม่ได้อยากซ้อมกันแค่รอบเดียวหรอก แต่ว่ามันติดปัญหาหลายๆอย่าง ไม่ว่าจะเป็นเวลาว่างของคนในวงที่ไม่ค่อยตรงกันซักเท่าไหร่ หรือแม้แต่การจองห้องซ้้อมที่มหาลัยที่เค้าให้ซ้อมได้แค่วงละชั่วโมงเท่านั้น
+                ซึ่งพอจะไปจองวงอื่นๆเค้าก็จองกันไปหมดแล้ว ที่ซ้อมครั้งเดียวนั้นก็คือพวกผมต้องไปเช่าห้องซ้อมข้างนอกเล่นกันเอง พอถึงวันแสดงก็ตามคาดครับ เละไม่เป็นท่า 555  คือคนนึงเล่นอย่างนึง คนนึงเล่นอีกอย่างนึง นักร้องก็ร้องอีกอย่างนึง 
+                จังหวะคือแทบไม่ตรงกันเลย จนถึงขนาดที่คนดูต้องมาช่วยร้องเลย เพราะนักร้องจับจังหวะไม่ถูก 555  แต่ถึงแม้ว่ามันจะเละไม่เป็นท่ายังไง แต่ผมก็ดีใจที่ได้เจอกับเพื่อนต่างคณะจากทั้งในวง แล้วก็วงอื่นๆที่ไปประกวดในวันนั้น
+                คืออย่างน้อยผมก็รู้สึกว่าผมได้ลองทำอะไรใหม่ๆดูที่ตั้งแต่อยู่มหาวิทยาลัยมาซัก 2 เดือนได้ก็ยังไม่เคยได้ทำ จนตอนนี้ได้ทำแล้ว ผมก็เลยได้ข้อคิดว่า ก่อนสมัครก็ซ้อมให้ดีๆก่อนนะ
+            </p>
+        </div>
+
+    </div>
+
+    <script>
+        let mainNav = document.getElementById("js-menu");
+        let navBarToggle = document.getElementById("js-nav-toggle");
+
+        navBarToggle.addEventListener("click", function () {
+            mainNav.classList.toggle("active");
+        }); 
+    </script>
+    
+</body>
+</html>

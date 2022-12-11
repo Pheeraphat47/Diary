@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+nav {
+    display: flex;
+    height: auto;
+    background: #1D1D1F;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.nav-toggle {
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+
+}
+
+.logo {
+    margin: 40px 0 40px 0;
+    font-size: 24px;
+}
+
+ul {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+    display: none;
+}
+
+ul li {
+    list-style-type: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 20px;
+    text-align: center;
+    padding: 5px 50px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul li:first-child {
+    margin-top: 0;
+}
+
+ul li:first-child {
+    margin-top: 0;
+}
+
+ul li:hover {
+    opacity: 0.5;
+}
+
+.active {
+    display: flex;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 30px;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.icon a {
+    color: #1D1D1F;
+}
+
+.icon a:hover {
+    font-size: 90px;
+    color: #1D1D1F;
+    transition: 0.75s;
+}
+
+
+@media screen and (min-width: 800px) {
+
+
+    nav {
+        height: 80px;
+        flex-direction: row;
+    }
+
+    .logo {
+        padding-left: 50px;
+        margin: 0;
+        width: 20%;
+    }
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        width: 80%;
+        flex-direction: row;
+    }
+
+    ul li {
+        display: inline-block;
+        margin: 0 70px 0 0;
+        text-align: left;
+        font-size: 24px;
+        padding: 0;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 60px;
+        font-size: 100px;
+        margin-top: 100px;
+    }
+
+    .icon a {
+        color: #1D1D1F;
+    }
+
+    .icon a:hover {
+        font-size: 150px;
+        color: #1D1D1F;
+        transition: 0.75s;
+    }
+
+}
+
+@media screen  and (max-width:799px) and (min-width:500px){
+    .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 40px;
+        font-size: 60px;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    
+    .icon a {
+        color: #1D1D1F;
+    }
+    
+    .icon a:hover {
+        font-size: 75px;
+        color: #1D1D1F;
+        transition: 0.75s;
+    }
+    
+}

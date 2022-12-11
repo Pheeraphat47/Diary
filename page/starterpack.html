@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT#28 StarterPack</title>
+    <!-- import fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="shortcut icon" href="../img/diary.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background: white;
+        }
+
+        nav {
+            display: flex;
+            height: auto;
+            background: #1D1D1F;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            flex-direction: column;
+            margin-bottom: 100px;
+        }
+
+        .nav-toggle {
+            color: white;
+            cursor: pointer;
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 30px;
+
+        }
+
+        .logo {
+            margin: 40px 0 40px 0;
+            font-size: 24px;
+        }
+
+        ul {
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 0;
+            display: none;
+        }
+
+        ul li {
+            list-style-type: none;
+            font-size: 24px;
+            cursor: pointer;
+            margin: 20px;
+            text-align: center;
+            padding: 5px 50px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        ul li:first-child {
+            margin-top: 0;
+        }
+
+        ul li:first-child {
+            margin-top: 0;
+        }
+
+        ul li:hover {
+            opacity: 0.5;
+        }
+
+        .active {
+            display: flex;
+        }
+
+        .starterpack {
+            display: flex;
+            margin: 0 auto;
+            height: 375px;
+            width: 375px;
+            margin-bottom: 100px;
+        }
+        .contentbox {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #FFFF99;
+            padding: 50px 50px 50px 50px;
+            font-size: 24px;
+        }
+
+        @media screen and (min-width: 768px) {
+
+            nav {
+                height: 80px;
+                flex-direction: row;
+            }
+
+            .logo {
+                padding-left: 50px;
+                margin: 0;
+                width: 20%;
+            }
+
+            ul {
+                display: flex;
+                justify-content: flex-end;
+                width: 80%;
+                flex-direction: row;
+            }
+
+            ul li {
+                display: inline-block;
+                margin: 0 70px 0 0;
+                text-align: left;
+                font-size: 24px;
+                padding: 0;
+            }
+
+            .nav-toggle {
+                display: none;
+            }
+
+            .starterpack {
+            display: flex;
+            margin: 0 auto;
+            height: 600px;
+            width: 600px;
+            margin-bottom: 100px;
+        }
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav>
+        <span class="nav-toggle" id="js-nav-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+
+
+        <div class="logo">
+            <h1 style="color: white;">Diary</h1>
+        </div>
+
+        <ul id="js-menu">
+            <li><a href="../index.html" style="color: white;">Home</a></li>
+            <li><a href="../diary/diary.html" style="color: white;">About</a></li>
+            <li><a href="../contact/contact.html" style="color: white;">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="content">
+        <img src="../img/starterpack.jpg" alt="starterpack" class="starterpack">
+        <h1 style="text-align: center;">IT28# StarterPack</h1>
+        <div class="contentbox">
+            <p> เป็นอีกหนึ่งโครงการที่ดีมากๆ ผมชอบ Concept ของโครงการตรงที่เค้าเปิดโอกาสให้รุ่นพี่ ได้มาสอนน้องๆ
+                แทนที่จะเอาอาจารย์มาสอน
+                มันดีตรงที่พอเป็นรุ่นพี่แล้ว สำหรับผมมันทำให้รู้สึกไม่เกร็ง
+                ดูแล้วรุ่นพี่หลายๆคนค่อนข้างที่จะเอนเตอร์เทนน้องๆเก่งมากก คือรู้เลยว่าพยายามไม่ให้มีเดดแอร์เกิดขึ้น
+                ซึ่งมันก็ดีนะคับ แต่ผมอยากจะบอกว่าพี่ๆพักกันบ้างก็ได้ระคับ ผมเหนื่อยแทน 555
+                และก็พี่ๆทุกคนคอยเป็นห่วงน้องๆทุกคนอยู่ตลอดเลยฮะ อย่างวันแรกก็มีเพื่อนผมที่ชื่อ เฟิรส์
+                อยู่ดีๆเค้าก็หูดับไป
+                พี่ๆก็คอย takecare ดีมากๆ โมเมนต์นะตอนนั้นคือประทับใจมาก
+                และก็ระหว่างที่พี่ๆสอนอยู่พอมีเพื่อนๆในกลุ่มไมเข้าใจ พี่ๆก็เข้ามาแทบจะทันทีเลย
+                ตรงนี้ก็เป็นอีกจุดนึงที่ผมประทับใจ และโครงการนี้ยังทำให้ผม
+                ได้รู้จักกับเพื่อนใหม่ๆอีกหลายๆคนที่ผมยังไม่เคยคุยด้วย รวมไปถึงพี่ๆทุกคนที่อยู่ในโครงการอีกด้วย
+                หลังจบโครงการผมก็ได้คอนแทคของหลายๆคนมาเพียบเลย ก็ต้องขอบคุณโครงการนี้อีกเช่นเคย
+                และเนื้อหาที่สอนทั้งหมดในโครงการก็เป็นเนื้อหาที่ผมจะได้เจอในการเรียนจริงอีกด้วยไม่ว่าจะเป็น การเขียนภาษา
+                Java , Html , Css , Sql แล้วก็ Git เป็นต้น ซึ่งพี่ๆทุกคนก็เก่งมาก สอนดีมาก
+                ผมเข้าใจในสิ่งที่พวกพี่สอนหมดเลยนะ
+                แล้วก็ยังได้คำแนะนำดีๆในการเรียนจากรุ่นพี่อีก คือรุ่นพี่เล่าแบบหมดเปลือกเลย555
+                ก็อยากจะขอบคุณพี่ๆทุกคนมากเลยค้าบ นี่เป็นหนึ่งในค่ายที่ดีที่สุดในชีวิตผมเลย
+            </p>
+        </div>
+    </div>
+
+    <script>
+        let mainNav = document.getElementById("js-menu");
+        let navBarToggle = document.getElementById("js-nav-toggle");
+
+        navBarToggle.addEventListener("click", function () {
+            mainNav.classList.toggle("active");
+        }); 
+    </script>
+</body>
+
+</html>
